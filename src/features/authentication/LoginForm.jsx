@@ -50,7 +50,7 @@ function LoginForm() {
       </FormRowVertical>
       <FormRowVertical>
         <Button size="large" disabled={isLoading}>
-          Login
+         
           {!isLoading ? "Log in" : <SpinnerMini />}
         </Button>
       </FormRowVertical>
