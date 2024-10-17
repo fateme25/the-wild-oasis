@@ -32,8 +32,8 @@ function ProtectedRoute({ children }) {
         <Spinner />
       </FullPage>
     );
-  //4- if there is can access to whole app
-  return children;
+  //4- if there is an authenticated user can access to App
+  if (isAuthenticated)return children;
 }
 
 export default ProtectedRoute;
